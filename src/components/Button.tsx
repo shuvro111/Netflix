@@ -23,9 +23,8 @@ const Button: React.FC<Props> = ({
       disabled={disabled}
       type={type}
       onClick={onClick}
-      className={`flex justify-center items-center bg-netflix-red rounded-sm text-sm text-netflix-white font-bold px-6 py-3 md:px-6 md:py-3 ${styles}`}
+      className={`btn-netflix ${styles}`}
     >
-      {' '}
       {leftIcon} {children} {rightIcon}
     </button>
   )

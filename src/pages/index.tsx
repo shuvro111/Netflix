@@ -2,7 +2,7 @@ import React from 'react'
 
 import Head from 'next/head'
 
-import Header from '@components/Header'
+import Banner from '@components/Banner'
 import Hero from '@containers/Hero'
 import { useAuth } from '@contexts/AuthContext'
 
@@ -29,8 +29,7 @@ export default function Home() {
         <Hero />
       ) : (
         <>
-          <Header onClickHandler={() => null} />
-          <h1>Welcome {currentUser.displayName} to the dashboard</h1>
+          <Banner />
         </>
       )}
       {/* Hero */}

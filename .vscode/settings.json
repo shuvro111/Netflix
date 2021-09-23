@@ -20,7 +20,7 @@
     "typescriptreact"
   ],
   "prettier.endOfLine": "lf",
-  "editor.fontFamily": "MesloLGS NF, DM Mono",
+  "editor.fontFamily": "DM Mono, MesloLGS NF",
   "editor.fontLigatures": true,
-  "editor.fontSize": 18
+  "editor.fontSize": 20
 }
