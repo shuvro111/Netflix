@@ -7,7 +7,7 @@ const requests = {
 
   fetchNetflixOriginals: {
     title: 'Netflix Originals',
-    url: `/discover/movie?api_key=${API_KEY}&language=en-US&with_networks=213`,
+    url: `/discover/movie?api_key=${API_KEY}&with_networks=213`,
   },
 
   fetchTopRated: {
