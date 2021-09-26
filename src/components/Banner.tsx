@@ -20,7 +20,7 @@ const Banner = () => {
     return request
   }
   useEffect(() => {
-    fetchData().then((res) => console.log(res.data.results[0]))
+    fetchData()
   }, [])
 
   const backgroundStyles: CSSProperties = {

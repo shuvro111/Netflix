@@ -23,29 +23,33 @@ const requests = {
   /* With Generes */
   fetchActionMovies: {
     title: 'Action',
-    url: `/discover/movie?api_key=${API_KEY}&language=en-US&with_genre=28`,
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=28`,
   },
 
   fetchComedyMovies: {
     title: 'Comedy',
-    url: `/discover/movie?api_key=${API_KEY}&language=en-US&with_genre=35`,
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=35`,
   },
 
   fetchHorrorMovies: {
     title: 'Horror',
-    url: `/discover/movie?api_key=${API_KEY}&language=en-US&with_genre=27`,
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=27`,
   },
 
   fetchThrillerMovies: {
     title: 'Thriller',
-    url: `/discover/movie?api_key=${API_KEY}&language=en-US&with_genre=80`,
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=80`,
   },
 
   fetchAnimationMovies: {
     title: 'Animation',
-    url: `/discover/movie?api_key=${API_KEY}&language=en-US&with_genre=16`,
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=16`,
   },
+}
 
+export default requests
+
+export const MovieById = {
   /* Get Movie By Id */
   fetchMovieByid: (movieId) => {
     return `/movie/${movieId}?api_key=${API_KEY}&language=en-US`
@@ -62,5 +66,3 @@ const requests = {
     return `/movie/${tvId}/videos?api_key=${API_KEY}&language=en-US`
   },
 }
-
-export default requests
