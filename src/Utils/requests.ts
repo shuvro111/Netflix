@@ -65,4 +65,6 @@ export const MovieById = {
   fetchTvTrailerByid: (tvId) => {
     return `/movie/${tvId}/videos?api_key=${API_KEY}&language=en-US`
   },
+  fetchMovieCredits: (movieId) =>
+    `https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=${API_KEY}`,
 }

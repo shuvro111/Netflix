@@ -28,7 +28,7 @@ const MovieContainer: React.FC<Props> = ({ genre, movies }) => {
       >
         {movies.map((movie) => (
           <SwiperSlide key={movie.id}>
-            <Thumbnail result={movie} />
+            <Thumbnail result={movie} id={movie.id} />
           </SwiperSlide>
         ))}
       </Swiper>

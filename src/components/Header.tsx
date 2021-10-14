@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import Button from '@components/Button'
@@ -31,9 +32,21 @@ const Header: React.FC<Props> = ({ onClickHandler }) => {
       <a href="">
         <img src="/images/netflix_logo.png" alt="Logo" className="w-28" />
       </a>
-      <Button onClick={handleClick} styles="max-w-24">
-        {btnText}
-      </Button>
+      <div className="flex items-center">
+        <div className="flex items-center mr-6 gap-4">
+          <Link href="/profile">
+            <img
+              className="w-10 h-10 p-1 bg-white rounded-full cursor-pointer"
+              src="https://robohash.org/fc820f57e89efed29b5d3505f7c5911c?set=set4&bgset=&size=400x400"
+              alt="Profile"
+            />
+          </Link>
+          <p className="text-xl text-white">{currentUser.displayName}</p>
+        </div>
+        <Button onClick={handleClick} styles="max-w-24">
+          {btnText}
+        </Button>
+      </div>
     </div>
   )
 }
