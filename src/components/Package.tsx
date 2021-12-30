@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Link from 'next/link'
 import { RiNetflixFill } from 'react-icons/ri'
 
 import Button from './Button'
@@ -22,12 +23,14 @@ const Package: React.FC<Props> = ({ type, quality, active }) => {
           Active
         </p>
       ) : (
-        <Button
-          type="button"
-          styles="bg-gray-200 hover:bg-gray-100 duration-200 text-black"
-        >
-          Choose Plan
-        </Button>
+        <Link href={`profile/payment?plan=${type}`}>
+          <Button
+            type="button"
+            styles="bg-gray-200 hover:bg-gray-100 duration-200 text-black"
+          >
+            Choose Plan
+          </Button>
+        </Link>
       )}
     </div>
   )

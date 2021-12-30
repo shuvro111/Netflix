@@ -22,5 +22,5 @@
   "prettier.endOfLine": "lf",
   "editor.fontFamily": "DM Mono, MesloLGS NF",
   "editor.fontLigatures": true,
-  "editor.fontSize": 20
+  "editor.fontSize": 18
 }
